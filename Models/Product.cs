@@ -8,7 +8,7 @@ namespace Learn_ASP.NET_CRUD.Models
         [Key]
         [StringLength(6)]
         public string? Code { get; set; }
-        [Required]
+        [Required] 
         [StringLength(75)]
         public string? Name { get; set; }
         [Required]
