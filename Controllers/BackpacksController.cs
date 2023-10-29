@@ -61,7 +61,7 @@ namespace Learn_ASP.NET_CRUD.Controllers
         {
             if (ModelState.IsValid)
             {
-                // The backpack is not assigned to a character
+                // The backpack is not assigned to a character 
                 _context.Add(backpack);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
