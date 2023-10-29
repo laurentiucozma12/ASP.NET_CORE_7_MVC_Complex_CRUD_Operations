@@ -4,8 +4,9 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Backpack Backpack { get; set; }
-        public List<Weapon> Weapons { get; set;}
-        public List<Faction> Factions { get; set;}
+        public int? BackpackId { get; set; }
+        public Backpack? Backpack { get; set; }
+        public ICollection<Weapon>? Weapons { get; set; }
+        public ICollection<Faction>? Factions { get; set;}
     }
 }
